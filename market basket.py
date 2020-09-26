@@ -16,7 +16,7 @@ records = []
 for i in range(0,len(data)):
         records.append([str(data.values[i,j]) for j in range(0,20)]) #32 for gro.csv
 #print(records)
-len(records)
+#len(records)
 
 #for gro.csv
 # a = records
