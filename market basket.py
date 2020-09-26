@@ -8,14 +8,13 @@ data = pd.read_csv('D:\datasets\store_data.csv')
 # item = data['Item(s)']
 # item = item[:40]
 #print(data.shape)
-
 # d1 = data.drop(['Item(s)'], axis = 1)
-d1 = data.loc[:39]
+#d1 = data.loc[:39]
 #len(d1)
 
 records = []
-for i in range(0,len(d1)):
-        records.append([str(d1.values[i,j]) for j in range(0,20)]) 
+for i in range(0,len(data)):
+        records.append([str(data.values[i,j]) for j in range(0,20)]) #32 for gro.csv
 #print(records)
 len(records)
 
